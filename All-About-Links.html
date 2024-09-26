@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links!!!!</title>
+</head>
+<body>
+    <h2 id="top"> All about HTML Links. Written by <em>Seo :)</em></h2>
+    <hr />
+
+    <h3 id="A_Tag"> The <<i>a</i>> tag is a clickable link. </h3>
+    <p> For example, you can click this one.
+    <a href="https://www.google.com/search?client=firefox-b-1-d&q=what+is+recursion">
+        What is recursion?</a> You are going to need the <b>Absolute Address</b> which
+        requires the domain name <em>www.google.com</em> and an optional
+        <em>/search?client=firefox</em>> , all the stuff after <em>.com</em>
+    </p>
+    <<hr />>
+
+    <h3 id="RelativeUrls"> Relative URLS on a Local Host</h3>
+    <p><b>No</b> domain name is needed, only the relative path! For example, I can give you the links to
+        the previous HTML lessons I've learned.
+    </p>
+    <ul>
+        <li>
+            <a href="Structure-Basics.html">Basic Structuring</a>
+        </li>
+        <li>
+            <a href="Fancy-Text.html">Fancy Text</a>
+        </li>
+        <li>
+            <a href="All-About-Lists.html">HTML Lists</a>
+        </li>
+    </ul>
+    <p> OR... You can go to the
+     <a href="index.html">homepage</a>. </p>
+
+    <hr />
+
+    <h3 id="index">index.html</h3>
+    <p>The browser always uses index.html as the homepage. Infact, whenever you type</p>
+    <b>www.google.com/</b>
+    <p>Your browser immediate tries to find and load www.google.com/index.html</p>
+    <p><b>CAUTION</b>: This only works for a Live website. Not a locally hosted website (Outdated)</p>
+
+    <h3 id="Target"> Target Attribute. Open link in new tab by using target="_blank" </h3>
+    <p>
+        <a href="http://www.google.com" target="_blank">
+            click here to search on Google! </a>
+        <em> note: ( this opens in a new tab )</em>
+    </p>
+    <hr />
+
+    <h3 id="Email_section">Emails!</h3>
+    <p>Very similar to hyperlinks, the only difference is the email address will be included </p>
+    <ul><li> mailto: </li></ul>
+    <p> right before the email address. For example</p>
+    <ul><li> href="mailto:jeff@amazon.com" </li></ul>
+    <p> here it is implemented:</p>
+    <a href="mailto:jeff@amazon.com"> Jeff's Email</a>
+
+    <hr />
+
+    <h3 id="ID_section"> Links to a section on the <em>same</em> page using the ID attribute!</h3>
+    <p> This can be achieved by assigning unique ID's to specific HTML elements.
+        For example, the section on Relative Urls has the id="RelativeUrls". I can simply
+        reference this id with a # before it. Clicking on it will take me to the section</p>
+    <a href="#RelativeUrls">Section on Relative URLS</a>
+    <p> I can also do the same to the top of the page! </p>
+    <a href="#top">Top of the Page!</a>.
+
+    <p>I can do the same thing with external links. All I have to do is inspect another website
+        for <b>ID attributes</b> and link them with using <b><i>url.com/section#id</i></b></p>
+    <a href="https://en.wikipedia.org/wiki/HTML#Development" target="_blank">
+        Click here to learn how HTML was made (opens in new window) </a>
+
+    <!-- Comments apear like this!
+         as of HTMl5, the <br />, <hr /> and few others
+         can be replaced with just <br> and <hr>. makes life easier!
+     -->
+    <hr>
+    <h3>Conclusion</h3>
+    <p>Links are very usefull, and powerfull. It's good to know how to use them. Thanks for reading, you can go to the
+        <a href="index.html">homepage</a>
+        now if you like :). Or re-read any section!</p>
+    <ul>
+        <li>
+            <a href="#top">Introduction to HyperLinks</a>
+        </li>
+        <li>
+            <a href="#A_Tag">The <<i>a</i>> tag</a>
+        </li>
+        <li>
+            <a href="#RelativeUrls">Relative-Urls</a>
+        </li>
+        <li>
+            <a href="#index">what is index.html?</a>
+        </li>
+        <li>
+            <a href="#Target">Target Attribute</a>
+        </li>
+        <li>
+            <a href="#Email_section">Email-Adresses</a>
+        </li>
+        <li>
+            <a href="#ID_section">The ID attribute</a>
+        </li>
+
+    </ul>
+    <p> blessings! </p>
+</body>
+</html>
