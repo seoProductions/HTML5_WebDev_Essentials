@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables..........</title>
+</head>
+<body>
+    <h2>All about Tables, by <em>Seo</em> :)</h2>
+    <hr>
+    <h2>Content:</h2>
+    <ul>
+        <li>
+            <a href="#table">Table TAGS</a>
+        </li>
+        <li>
+            <a href="#span">Row and Column Spanning</a>
+        </li>
+        <li>
+            <a href="#Long Tables">Good to have TAGS</a>
+        </li>
+        <li>
+            <a href="#conclusion">Conclusion</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h3 id="table">Table TAGS</h3>
+    <p> Creating a table involves these HTML tags. </p>
+    <ul>
+        <li>
+            <b><<i>table</i>> </b>: Container that holds the table
+        </li>
+        <li>
+            <b><<i>tr</i>> </b>:  (Table Row) Container that holds a row of data
+        </li>
+        <li>
+            <b><<i>td</i>> </b>:  (Table Data) Holds a cell of data
+        </li>
+        <li>
+            <b><<i>th</i>> </b>: (Table Header) Same as Table Data - just more special.
+            <ul>
+                <li>
+                    Represents the header for a COLUMN or a ROW.
+                </li>
+                <li>
+                    Good for Screen Readers & and CSS
+                </li>
+                <li>
+                    Use it even if its empty - so that It renders correctly.
+                </li>
+                <li>
+                    <strong>scope=""</strong> attribute indicated weather it is a column or row. <br>
+                    ( row / col )
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+    <p>Here is an example</p>
+    <table>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"> X<sub>f</sub></th>
+            <th scope="col"> X<sub>i</sub></th>
+        </tr>
+        <tr>
+            <th scope="row">Trial 1</th>
+            <td> 10</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <th scope="row">Trial 2</th>
+            <td> 6</td>
+            <td> 12</td>
+        </tr>
+        <tr>
+            <th scope="row">Trial 3</th>
+            <td> 24</td>
+            <td> 3</td>
+        </tr>
+        <tr>
+            <th scope="row">Trial 4</th>
+            <td> 5</td>
+            <td> 25</td>
+        </tr>
+    </table>
+    <p>Looks wack, ik. but thats okay cuz this is just the structure.</p>
+
+    <hr>
+    <h3 id="span">Row and Column Spanning</h3>
+    <p>sometimes the data in a row span across multiple rows, or multiple columns. For this, we can
+        use the (rowspan / colspan) atribute. this applies to the <b>th</b> and <b>td</b> TAG</p>
+
+    <table>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"> X<sub>f</sub></th>
+            <th scope="col"> X<sub>i</sub></th>
+        </tr>
+        <tr>
+            <th scope="row">Trial 1</th>
+            <td> 10</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <th scope="row">Trial 2</th>
+            <td colspan="2"> 30</td>
+        </tr>
+        <tr>
+            <th scope="row">Trial 3</th>
+            <td rowspan="2"> 24</td>
+            <td> 3</td>
+        </tr>
+        <tr>
+            <th scope="row">Trial 4</th>
+            <td> 5</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3 id="Long Tables">Good to have TAGS</h3>
+    <p> These tags are helpfull when structuring a long table full of data.
+        We seperate sections of the table into 3
+    </p>
+    <ul>
+        <li>
+            <b><<i>thead</i>> </b>: (Table Head) Container
+        </li>
+        <li>
+            <b><<i>tbody</i>> </b>: (Table Body) Container
+        </li>
+        <li>
+            <b><<i>tfoot</i>> </b>: (Table Footer) Container
+        </li>
+    </ul>
+    <p>We do this to better style and structure the table. We can even add good functionality</p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Heading1</th>
+                <th scope="col">Heading2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Row1</th>
+                <td>32</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <th scope="row">Row2</th>
+                <td>21</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <th scope="row">Row3</th>
+                <td>77</td>
+                <td>53</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <td>Footer1</td>
+                <td>Footer2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h3 id="conclusion">Conclusion</h3>
+    <p>Its good to know how to structure tables, and their attributes. This all will carry over to
+        CSS to make it much more readable and nicer</p>
+    <a href="#top">Click here to go to the top!</a>
+    
+</body>
+</html>
