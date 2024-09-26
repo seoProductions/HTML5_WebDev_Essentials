@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms & Input</title>
+</head>
+<body>
+    <h2>Forms and Input, by <em>Seo</em> :)</h2>
+    <hr>
+
+    <h3 id="creating">Creating a Form</h3>
+    <p> A <i>Form</i> is a  <strong>Container</strong> that host's user-input aswell as specific action to
+        the backend of a website. Attributes of Form are:
+    </p>
+    <ul>
+        <li>
+            <b>action=""</b>: <b>REQUIRED</b>: URL where the info will be processed
+        </li>
+        <li>
+            <b>method=""</b>:
+            <ul>
+                <li>get: Values are only being passed in to the server.</li>
+                <li>post: HTTP is used to send values. More secure. Much Longer. Suitable for handling Databases</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+
+    <hr>
+
+    <h3 id="input">Input TAG</h3>
+    <h4>Once inside the <b>form</b> tag, you can include all the buttons, boxes, text-input that you want. </h4>
+    <p> We use the <<i>input</i>> tag for this. It is an empty element that takes in attributes </p>
+    <ul>
+        <li>
+            <b>type=""</b>: What type of input to create
+        </li>
+        <li>
+            <b>name=""</b>: Passed to the server. Acts as the "key" in a key-value pair scenario. This is so
+            that the webserver can identity what each data is.
+        </li>
+        <li>
+            <b>id=""</b>: ID to identify this specific HTML element
+        </li>
+        <li>
+            <b>maxlength</b>: optional, limit the # of characters the user can input.
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3 id="text">Text-Input</h3>
+    <p>Here is an example of a input <b>type="text"</b></p>
+    <form action="a.js" method="post">
+        <p> Username: (please input 3-16 characters)
+            <br>
+            <input type="text" name="username" id="username" maxlength="16" minlength="3">
+            <br>
+            Password: (Must be 8 characters long)
+            <br>
+            <input type="password" name="password" id="password" maxlength="8">
+
+        </p>
+    </form>
+
+    <p>This, however, is not secure to send passwords to the server, use SSL</p>
+
+    <p>Here is an example of a input <b>type="textarea"</b></p>
+    <form action="a.js" method="post">
+        <p> Username: (please input 3-16 characters)
+            input:<textarea name="text">type in your essay here. Word limit is 500</textarea>
+        </p>
+    </form>
+    <p><b>NOTE:</b> the given text in the Text Area will be sent to the server by default. </p>
+
+
+    <hr>
+
+    <h3 id="radio">Radio-Button</h3>
+    <p>Continuing with the <b>Input TAG</b>, another possible value for the attribute type="" is <strong>radio</strong></p>
+    <p>For a radio-button and alot of other types, we use these attributes.</p>
+    <ul>
+        <li><b>name=""</b>: same. Just please keep this one constant across all buttons.</li>
+        <li><b>value=""</b>: the value to be passed to the server</li>
+        <li><b>checked=""</b>: the default-selection option</li>
+    </ul>
+    <p>Here is an example! </p>
+
+    <form action="a.js">
+        <p><b>DO YOU AGREE TO THE TERMS AND CONDITIONS?</b></p>
+        <br>
+        <input type="radio" name="terms" value="yes">
+        <input type="radio" name="terms" value="no" checked="checked">
+    </form>
+
+    <p><b>This is what happens when the <i>name=""</i> is not the same across all buttons</b></p>
+
+    <form action="a.js">
+        <p><b>DO YOU AGREE TO THE TERMS AND CONDITIONS?</b></p>
+        <br>
+        <input type="radio" name="terms1" value="yes">
+        <input type="radio" name="terms2" value="no" checked="checked">
+    </form>
+    <p>It defeats the purpose of radio buttons!</p>
+
+    <hr>
+    <h3 id="moreboxes">More Boxes..</h3>
+    <hr>
+
+    <h4>Checkbox</h4>
+    <p>The <b>Checkbox</b> type is super similar to the radiobutton type. Just that we can select more than one now.
+        Implimenting this should be almost exact.</p>
+
+    <form action="a.js">
+        <p><b>DO YOU LIKE THE TERMS AND CONDITIONS?</b></p>
+        <br>
+        <input type="checkbox" name="terms" value="yes">
+        <input type="checkbox" name="terms" value="mabye">
+        <input type="checkbox" name="terms" value="yesnt">
+    </form>
+
+    <h4>Drop-Down List</h4>
+    <p>Very similar to Radiobutton. Usefull if you have a long list to choose from.</p>
+    <p>We can create a Drop-Down List Box using <b>2 HTML Tags</b> and some attributes of our choosing</p>
+
+    <ul>
+        <li>
+            <<i>select</i>> : Drop-Down Container that holds <i><b>options</b></i> that the user can select from.
+            <ui>
+                <li><b>name=""</b>: (attribute) : the Key in the Key-Value pair sent to the Server</li>
+                <li><b>size=""</b>: (attribute) : how many options show at once.</li>
+                <li><b>multiple=""</b>: (attribute) : allow for multiple options to be selected at the same time.</li>
+            </ui>
+        </li>
+        <li>
+            <<i>option</i>> : use to specify individual options to choose from.
+            <ui>
+                <li><b>value=""</b>: (attribute) : the value in the Key-Value pair sent to the Server</li>
+                <li><b>selected=""</b>: (attribute) : select an option by default. The first option is always selected by default, unless specified</li>
+            </ui>
+        </li>
+    </ul>
+
+    <h5>Here is an example of a Drop-Down-List-Box</h5>
+    <form action="a.js" method="post">
+        <p>choose your favorite animal: </p>
+        <select name="favorite-animal" size="2">
+            <option value="dog">dog</option>
+            <option value="cat">cat</option>
+            <option value="bird" selected="selected">bord</option>
+            <option value="frog">frog</option>
+        </select>
+    </form>
+
+    <h5>Here is an example of a Multiple-Select-Box</h5>
+    <form action="a.js" method="post">
+        <p>choose your favorite animals (hold CTRL while clicking): </p>
+        <select name="favorite-animal" size="3" multiple="multiple">
+            <option value="dog">dog</option>
+            <option value="cat">cat</option>
+            <option value="bird" selected="selected">bord</option>
+            <option value="frog">frog</option>
+            <option value="wolf">wolf</option>
+            <option value="fish">fish</option>
+            <option value="rabbit">rabbit</option>
+        </select>
+    </form>
+
+    <hr>
+
+    <h3 id="FILE">FILE Input & Submission</h3>
+    <p>We use the same <<i>input</i>> tag to get file-input. The type (attribute) that we use is type="file" </p>
+    <p>A post method must be used. HTTP get method cannot send files. Okay! Take a look!</p>
+
+    <h5>Please upload pdf of the Articles of Confederation</h5>
+    <form action="a.js" method="post">
+        <input type="file" name="AofC" value="file dir goes here" >
+        <input type="submit" value="Upload File">
+    </form>
+    <p><b>NOTE:</b> The name (attribute) is optional for this input type </p>
+
+    <hr>
+
+    <h3 id="hidden">Buttons & Hidden Controls</h3>
+    <br>
+    <h5> type="image" </h5>
+    <br>
+    <p>You can have an image as a button! You use the <b>SAME</b> attributes as if you were adding an img TAG.
+        This includes the <b>src=""</b>, height="", and width="". Remember its good to specify dimensions so
+        that the page loads faster.</p>
+    <a href="Images.html">Click here to review the HTML img tag</a>
+
+    <form action="a.js" method="post">
+        <input type="image" src="images/Placeholder.png" alt="dinosaur info" width="100" height="20">
+    </form>
+
+    <p>
+        Pretty cool, but what if there was an actual <b><<i>button</i>></b>tag in HTML!
+    </p>
+    <p>The button tag servers as a <strong>Clickable Container</strong>. You can put text, images, whatever you like.</p>
+    <form action="a.js" method="post">
+        <p>I am using the button tag here inside the form</p>
+        <button>
+            <img src="images/Placeholder.png" alt="dino info"
+                 width="200"
+                height="40">
+            <i>Click Dino!</i>
+        </button>
+    </form>
+    <br>
+
+    <h5>Hidden Controlls</h5>
+    <p> the <<i>input</i>> tag has one great <b>type!</b> An input element of <strong>type="hidden"</strong>
+        hides from the user-the functionality and communication between the <i>Server</i></p>
+    <form action="a.js" method="post">
+        <!--Send to the server - what page we left off at. -->
+        <input type="hidden" name="pageleftoff" value="page-5">
+
+    </form>
+</body>
+</html>
