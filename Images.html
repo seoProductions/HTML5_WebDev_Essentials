@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images!</title>
+</head>
+<body id="top">
+    <h2>All about Images. By <em>Seo</em> :)</h2>
+    <hr>
+    <h2>Content:</h2>
+    <ul>
+        <li>
+            <a href="#img">The img TAG</a>
+        </li>
+        <li>
+            <a href="#sizing">Sizing practices</a>
+        </li>
+        <li>
+            <a href="#figure">HTML5: figure TAG</a>
+        </li>
+    </ul>
+
+    <h3 id="img">The image tag <<i>img</i>> </h3>
+    <p>the <b>img</b> tag is an empty tag. It only has attributes. Let's take a look at some</p>
+    <ul>
+        <li>
+            <b>src</b>: the relative URL of the image file
+        </li>
+        <li>
+            <b>alt</b>: detailed description of the image. (used by search engines and screen readers )
+        </li>
+        <li>
+            <b>title</b>: Displayed when image is hovered
+        </li>
+    </ul>
+    <p> here is a random photo I found lying around my desktop</p>
+
+    <img src="images/Placeholder.png" alt="Picture of a dinosaur giving you a side-eye" title="Dino">
+
+    <hr>
+    <h3 id="sizing">Its good practice to add size specifications to images</h3>
+    <p> this helps the browser load faster by knowing where to place the text, without needing the image to load! </p>
+    <p> you only need 2 attributes for this: </p>
+    <ul>
+        <li>
+            <b>height</b> (in pixels)
+        </li>
+        <li>
+            <b>width</b> (in pixels)
+        </li>
+    </ul>
+    <!-- My IDE automatically tells me the image dimensions -->
+    <img src="images/Placeholder.png" alt="Picture of a dinosaur giving you a side-eye" title="Dino"
+        height="140" width="300">
+
+    <p> When you have an <b>img</b> tag inside a paragraph, you can align the image. Use the align attribute </p>
+    <ul>
+        <li>
+            <b>align</b> left or right of the screen
+        </li>
+    </ul>
+    <hr>
+    <p><img src="images/Placeholder.png" alt="Picture of a dinosaur giving you a side-eye" title="Dino"
+            height="140" width="300" align="right">
+        Here is an example. This random photo I found is aligned to the right,
+        and the text is free to fill in the gaps.
+    </p>
+    <p><img src="images/Placeholder.png" alt="Picture of a dinosaur giving you a side-eye" title="Dino"
+            height="140" width="300" align="left"> Here is an example. This random photo I found is aligned to the left,
+            and the text is free to fill in the gaps.
+    </p>
+    <p>You can see its qutie buggy with HTML5.</p>
+
+    <hr>
+    <br>
+    <h3 id="figure">HTML5: Figure and Figcaption</h3>
+    <p> Figure is a container which holds both <b>img</b> and <b>figcaption</b>.
+        This makes it possible to associate an image with its caption. There was no way of doing this prior to HTML5</p>
+    <figure>
+        <img src="images/Placeholder.png" alt="Picture of a dinosaur giving you a side-eye" title="Dino"
+             height="240" width="400">
+        <figcaption>
+            Place holder photo of a dinosaur
+        </figcaption>
+    </figure>
+    <p>I like this way better than align. Figure can have multiple images: each sharing the same caption</p>
+
+    <figure>
+        <img src="images/Placeholder.png"
+             alt="Picture of a dinosaur giving you a side-eye"
+             title="Dino"
+             height="50" width="50">
+        <img src="images/Placeholder.png"
+             alt="Picture of a dinosaur giving you a side-eye"
+             title="Dino"
+             height="50" width="50">
+        <img src="images/Placeholder.png"
+             alt="Picture of a dinosaur giving you a side-eye"
+             title="Dino"
+             height="50" width="50">
+        <figcaption>
+            many photos sharing the same caption
+        </figcaption>
+    </figure>
+
+    <hr>
+    <p>That is all for HTML images!</p>
+    <a href="#top">Click here to go to the top</a>
+
+</body>
+</html>
