@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta >
+    <title>HTML extras part - 1</title>
+</head>
+<body>
+    <h2 id="top"> All about HTML Links. Written by <em>Seo :)</em></h2>
+
+    <h2>Content</h2>
+    <ul>
+        <li>
+            <a href="#block">Block and Inline Elements</a>
+        </li>
+        <li>
+            <a href="#frames">Frames</a>
+        </li>
+        <li>
+            <a href="#Special">Special Characters</a>
+        </li>
+        <li>
+            <a href="#conclusion">Conclusion</a>
+        </li>
+    </ul>
+    <hr />
+
+    <h2 id="block">Block and Inline Elements</h2>
+    <p>HTML elements are either <b>block</b> and <b>inline. Block elements happen to start on a new line
+        - <strong>always</strong>. Inline elements simply stay on the same line.</b></p>
+
+    <h4>Block</h4>
+    <h2>header2</h2>
+    <h3>header3</h3>
+    <ul>
+        <li>listing1</li>
+        <li>listing2</li>
+    </ul>
+
+    <h4>Inline</h4>
+    <p>the <i>other</i> <i><b>ones</b></i> <em>are</em> in <b>the</b> <strong>other</strong> ones...</p>
+
+    <hr>
+
+    <h3>Div & Span</h3>
+    <p>These 2 are mostly for cosmetic purposes.</p>
+    <ul>
+        <li><b>div</b> is a block container. Always starts on a new line and extends for the width of the page</li>
+        <li><b>span</b> is an inline container. Similar to highlighting with a highlighter</li>
+    </ul>
+    <p>Let me illustrate this using CSS</p>
+
+    <h4>Using SPAN</h4>
+    <p>
+        Once upon a midnight dreary, while I pondered, weak and weary,
+        Over many a quaint and curious volume of forgotten lore—
+        While I nodded, nearly napping, <span style="background-color: aquamarine">suddenly there came a tapping,
+        As of someone gently rapping, rapping at my chamber door.
+        “’Tis some visitor,” I muttered, “tapping</span> at my chamber door—
+        Only this and nothing more.”
+    </p>
+
+    <h2>Using DIV</h2>
+    <p>
+        Once upon a midnight dreary, while I pondered, weak and weary,
+        Over many a quaint and curious volume of forgotten lore—
+        While I nodded, nearly napping,<div style="background-color: aquamarine"> suddenly there came a tapping,
+        As of someone gently rapping, rapping at my chamber door.
+        “’Tis some visitor,” I muttered, “tapping</div> at my chamber door—
+        Only this and nothing more.”
+    </p>
+
+    <hr>
+
+    <h2 id="frames">Frames</h2>
+    <p>I frame stands for <i>inline frame</i>. You can quite literally put another web-page into your
+        webpage. This can be an external URL, or a Relative URL. Nice!</p>
+
+    <h5>Iframe to the Homepage</h5>
+    <iframe src="index.html" height="200" width="400"></iframe>
+
+    <hr>
+    <h3>Meta-Deta</h3>
+    <p>The <b><i>meta</i> tag lives inside the Header of the page. It uses attributes to describe usefull
+        info about the page.</b></p>
+
+    <p><i>Now, </i> the <b>meta</b> tag has a ton of possible attributes. lets look over them</p>
+    <ul>
+        <li> <b>name=""</b>: - the identifier for content. Used by the server</li>
+        <li> <b>content=""</b>: - the info passed to the server.</li>
+        <li> <b>http-equiv-""</b>: - for the search engine's out there</li>
+    </ul>
+
+    <h5>Common Names</h5>
+    <p>Some commonly used name's by convention are the following:</p>
+    <ul>
+        <li><b>description</b> - what the page is about. Dont exceed 155 char's</li>
+        <li><b>keywords</b> - keywords the user can search for on google. not too practicle in todays web</li>
+        <li><b>robots</b> - info to tell the search engine. Some values include:
+            <ul>
+                <li>noindex - dont add this page to the search results</li>
+                <li>nofollow - you can add this page, but not the links inside the page.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h5>Common http-equivalents</h5>
+    <ul>
+        <li><b>author</b></li>
+        <li><b>pragma</b> - prevents browser from storing cache data from the site.</li>
+        <li><b>expires</b> - limit caching up to a certain date. </li>
+    </ul>
+
+    <h5><b>NOTE:</b> The content property is included by all these attributes. </h5>
+
+    <hr>
+    <h2 id="Special">Special Characters</h2>
+    <p> HTML has a big number of codes for special characters. NOTE: not all fonts support these.
+        If you are using an ide, Type <i><b>&</b></i> followed by the name of the <b><i>symbol</i></b>
+        you want to type!
+    </p>
+
+    <h5>NOTE: there is also a numerical equivalent. Anyway, Look at all these symbols</h5>
+    <p>&lang;&int;&in;&lang;&integers;&sub;&target;&Aacute;&aacute;&abreve;&Abreve;&top;&ac;&acd;&Acirc;
+        &AMP;&infin;&lap;</p>
+
+    <h2>Gauss' Law</h2>
+    <h3> &phiv; =  &int;&Ecirc;&dot;d&Abreve; = q<sub>enc</sub> / &epsi;<sub>0</sub> </h3>
+
+    <hr>
+    <h2 id="conclusion">Conclusion</h2>
+    <p>Interesting HTML features; Good to know.</p>
+
+    <a href="#top">Go back to the Top!</a>
+</body>
+</html>
