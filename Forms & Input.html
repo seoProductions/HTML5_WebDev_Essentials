@@ -8,6 +8,40 @@
     <h2>Forms and Input, by <em>Seo</em> :)</h2>
     <hr>
     <h2 id="top">Content</h2>
+    <ul>
+        <p><b>NOTE:</b> this is a <i>looong</i> chapter. Consider using
+            the table of contents! </p>
+        <li>
+            <a href="#creating">Creating a Form</a>
+        </li>
+        <li>
+            <a href="#input">Input TAG</a>
+        </li>
+        <li>
+            <a href="#text">Text-Input</a>
+        </li>
+        <li>
+            <a href="#radio">Radio-Button</a>
+        </li>
+        <li>
+            <a href="#moreboxes">More Boxes..</a>
+        </li>
+        <li>
+            <a href="#FILE">File Input & Submission</a>
+        </li>
+        <li>
+            <a href="hidden">Button & Hidden Controls</a>
+        </li>
+        <li>
+            <a href="#labels">Labeling and FieldSet</a>
+        </li>
+        <li>
+            <a href="#validation">HTML5 Form Validation & Inputs</a>
+        </li>
+        <li>
+            <a href="#conclusion">In Conclusion</a>
+        </li>
+    </ul>
     <hr>
 
     <h3 id="creating">Creating a Form</h3>
@@ -223,9 +257,6 @@
     </form>
 
     <hr>
-    <h3 id="extra">HTML5 & Input Attributes</h3>
-
-    <hr>
 
     <h3 id="labels"> Labeling and FieldSet</h3>
     <p>HTML has more Elements to structure your forms <i>nicely!</i></p>
@@ -297,7 +328,43 @@
             </label>
             <label>
                 Let us know what we can do to improve <br>
-                <textarea name="feedback" cols="30" rows="10" placeholder="type here!"></textarea> <br>
+                <textarea name="feedback" cols="20" rows="5" placeholder="type here!"></textarea> <br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Communication</legend>
+            <label>
+                Would you like to unsubscribe from email communication? <br>
+                <input type="radio" name="unsubscribe" value="no">no <br>
+                <input type="radio" name="unsubscribe" value="only">only promotional emails <br>
+                <input type="radio" name="unsubscribe" value="yes">yes <br>
+                We're sad to see you go! Please come back again! <br>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <hr>
+
+    <h3 id="validation">HTML5 Form Validation & Inputs</h3>
+
+    <p> HTML5 has a wide range of input types. These can come in handy. To start, HTML5 supports Form-Validation within the
+        HTML elements themselves. You can make any <strong>Text Input</strong> a requirement without needed help from the Server.
+        Just add required="required" property! </p>
+
+    <h5>Here, I require the user to give me feedback!</h5>
+    <form action="a.js" method="post">
+        <fieldset>
+            <legend>Send Feedback</legend>
+            <label>
+                Are you satisfied with the extension? <br>
+                <input type="radio" name="satisfied" value="yes">yes <br>
+                <input type="radio" name="satisfied" value="no">no <br>
+            </label>
+            <label>
+                Let us know what we can do to improve <br>
+                <textarea name="feedback" cols="20" rows="5" placeholder="type here!" required="required"></textarea> <br>
             </label>
         </fieldset>
         <fieldset>
@@ -316,12 +383,50 @@
 
     <hr>
 
-    <h3 id="validation">Form Validation, and HTML5 Inputs</h3>
+    <p>There are many HTML5 Input types. <i>Featuring: </i></p>
+
+    <h4>Date Input: type="date"</h4>
+    <form action="a.js" method="get">
+        <fieldset>
+            <label>
+                Date Of Birth: <br>
+                <input type="date" name="dob">
+                <input type="submit" value="submit">
+            </label>
+        </fieldset>
+    </form>
+
+    <h4>Date Input: type="email"</h4>
+    <form action="a.js" method="get">
+        <fieldset>
+            <label>
+                Date Of Birth: <br>
+                <input type="email" name="dob" placeholder="example@gmail.com">
+                <input type="submit" value="submit">
+            </label>
+        </fieldset>
+    </form>
+
+    <h4>Date Input: type="url"</h4>
+    <form action="a.js" method="get">
+        <fieldset>
+            <label>
+                Date Of Birth: <br>
+                <input type="url" name="dob" placeholder="type url here">
+                <input type="submit" value="submit">
+            </label>
+        </fieldset>
+    </form>
+
+    <p><i>NOTE:</i> you can also include the placeholder="" attribute to include transparent text.
+        This is quite good for instructions
+    </p>
+
 
     <h3 id="conclusion">In Conclusion</h3>
     <p> That was a lot, huh? In my honest opinion, <i>forms</i> and <i>control</i> are
-        crucial to know. Not with the intention to have a web-page barley functional. But to
-        improve the user's overall exprience and satisfaction. Thanks for reading!</p>
+        crucial to know. Not only to have a web-page functional and useful, but also to
+        improve the user's overall experience and satisfaction. Thanks for reading!</p>
     <a href="#top">Click here to go back to the Top!</a>
 </body>
 </html>
