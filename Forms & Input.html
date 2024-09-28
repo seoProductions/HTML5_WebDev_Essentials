@@ -7,6 +7,8 @@
 <body>
     <h2>Forms and Input, by <em>Seo</em> :)</h2>
     <hr>
+    <h2 id="top">Content</h2>
+    <hr>
 
     <h3 id="creating">Creating a Form</h3>
     <p> A <i>Form</i> is a  <strong>Container</strong> that host's user-input aswell as specific action to
@@ -210,12 +212,116 @@
     <br>
 
     <h5>Hidden Controlls</h5>
-    <p> the <<i>input</i>> tag has one great <b>type!</b> An input element of <strong>type="hidden"</strong>
-        hides from the user-the functionality and communication between the <i>Server</i></p>
+    <p> the <<i>input</i>> attribute: <strong>type="hidden"</strong> hides the visible container while allowing communication
+        to the <i>Server</i>. This can be great when communicating what page you left off at, or what item you've been shopping for..
+        Either way, not all input-controls have to be visible to the user.</p>
     <form action="a.js" method="post">
         <!--Send to the server - what page we left off at. -->
         <input type="hidden" name="pageleftoff" value="page-5">
-
+        <p> This paragraph is adjacent with a hidden form controll. You just cant see it unless you go into
+            the source code!</p>
     </form>
+
+    <hr>
+    <h3 id="extra">HTML5 & Input Attributes</h3>
+
+    <hr>
+
+    <h3 id="labels"> Labeling and FieldSet</h3>
+    <p>HTML has more Elements to structure your forms <i>nicely!</i></p>
+
+    <h5>The <<i>label</i>></h5>
+    <p>
+        Adding labels to your <b>form controls</b> allows for better user expirience. You can wrap a label around
+        <b>Both</b>  the text and the input ~ so that the user can click both inorder to type stuff in.
+        It also helps when the screen is read by a screen-readers. Here is an example
+    </p>
+
+    <form action="a.js" method="post">
+        <label>
+            <p>Please enter your Initials</p>
+            <input type="text" name="initials" maxlength="5">
+            <input type="submit" value="Sign Document">
+        </label>
+    </form>
+
+    <h5>Compared to <b> WITHOUT</b> a label. <b>NOTICE</b> clicking on the text won't focus on the text box</h5>
+
+    <form action="a.js" method="post">
+        <p>Please enter your Initials</p>
+        <input type="text" name="initials" maxlength="5">
+        <input type="submit" value="Sign Document">
+    </form>
+    <p>The clickable area is <strong>EXPANDED</strong>. Labels dont use the <b>id=""</b> attribute, they use <b>for=""</b></p>
+
+    <h4> In order to better structure and organize our forms, we use 2 tags: </h4>
+
+    <ul>
+        <li>
+            <h5><<i>fieldset</i>></h5> - Container to relate form controlls together.
+        </li>
+        <li>
+            <h5><<i>legend</i>></h5> - Caption of the group
+        </li>
+    </ul>
+
+    <p>The order goes</p>
+    <ol>
+        <li>form</li>
+        <li>fieldset</li>
+        <li>
+            <ul>
+                <li>legend</li>
+                <li>
+                    label
+                    <ul>
+                        <li>text</li>
+                        <li>inputs</li>
+                        <li>buttons</li>
+                        <li>ect..</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Here is the result!</h4>
+
+    <form action="a.js" method="post">
+        <fieldset>
+            <legend>Send Feedback</legend>
+            <label>
+                Are you satisfied with the extension? <br>
+                <input type="radio" name="satisfied" value="yes">yes <br>
+                <input type="radio" name="satisfied" value="no">no <br>
+            </label>
+            <label>
+                Let us know what we can do to improve <br>
+                <textarea name="feedback" cols="30" rows="10" placeholder="type here!"></textarea> <br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Communication</legend>
+            <label>
+                Would you like to unsubscribe from email communication? <br>
+                <input type="radio" name="unsubscribe" value="no">no <br>
+                <input type="radio" name="unsubscribe" value="only">only promotional emails <br>
+                <input type="radio" name="unsubscribe" value="yes">yes <br>
+                <p>We're sad to see you go! Please come back again!</p> <br>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <hr>
+
+    <h3 id="validation">Form Validation, and HTML5 Inputs</h3>
+
+    <h3 id="conclusion">In Conclusion</h3>
+    <p> That was a lot, huh? In my honest opinion, <i>forms</i> and <i>control</i> are
+        crucial to know. Not with the intention to have a web-page barley functional. But to
+        improve the user's overall exprience and satisfaction. Thanks for reading!</p>
+    <a href="#top">Click here to go back to the Top!</a>
 </body>
 </html>
