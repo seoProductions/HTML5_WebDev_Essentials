@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Video and Sound</title>
+</head>
+<body>
+    <h2 id="top">Video and Sound! By <em>Seo</em> :)</h2>
+    <hr>
+    <h2>Content</h2>
+    <ul>
+        <li>
+            <a href="#video">HTML5 Video</a>
+        </li>
+        <li>
+            <a href="#audio">HTML5 Audio</a>
+        </li>
+        <li>
+            <a href="#extra">Extra</a>
+        </li>
+    </ul>
+    <hr>
+
+    <h3 id="video">HTML5 Video</h3>
+    <p>Prior to HTML5, developers would rely on external tools to display video on the interwebs.
+        Luckily, HTML5 has brought the functionality needed to support playing Video</p>
+    <video src="video/Screencast from 03-09-2024 10:47:05 PM.webm" controls width="800" height="450" loop>
+        <!-- only if the mp3 cant load -->
+        <strong>ERROR:</strong> to load video
+    </video>
+    <p>Here is an early experiment I made a while back. I was simply playing around with Sand Kinematics and C++</p>
+
+    <h4><b>NOTE:</b> if the video fails to load. The browser will show the text inbetween the <i>video tags</i></h4>
+    <h4><b>NOTE:</b> most HTML5 video attributes do not need values. They are more like <i>flags</i></h4>
+    <p>Let's look at some possible video flags</p>
+    <ul>
+        <li>
+            <b>src</b> - source of the video
+        </li>
+        <li>
+            <b>width, height</b> - helps page load faster
+        </li>
+        <li>
+            <b>poster</b> - (<i>FLAG</i>) - Display a picture as placeholder
+        </li>
+        <li>
+            <b>controls</b> - (<i>FLAG</i>) - tells browser to supply controlls for playback
+        </li>
+        <li>
+            <b>autoplay</b> - (<i>FLAG</i>)
+        </li>
+        <li>
+            <b>loop</b> - (<i>FLAG</i>) - loop the video
+        </li>
+        <li>
+            <b>preload</b> - What to do when the page loads
+            <ul>
+                <li>
+                    <b>none</b> - don't load video until user click on the video
+                </li>
+                <li>
+                    <b>auto</b> - load video once the page loads
+                </li>
+                <li>
+                    <b>metadeta</b> - browser can collect info.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p> HTML5 also provides the <strong>source</strong> tag - inorder to provide multiple video formats.</p>
+
+    <h3 id="audio">HTML5 Audio</h3>
+    <hr>
+
+    <p> Implimenting audio in HTML5 is just about the same as implimenting video. Most of the flag attributes
+        apply here too.</p>
+    <audio src="sound/ding.mp3" controls preload="auto" loop>
+        <!-- only if the mp3 cant load -->
+        Unable to load sound
+    </audio>
+    <p>here is a ding!</p>
+    <h4><b>NOTE:</b> the <strong>source</strong> tag also applies for sound! Used to specify different audio formats.</h4>
+
+    <hr>
+    <h3 id="extra">Extra</h3>
+
+    <p>Some more Sand footage. Just practicing my HTML</p>
+
+    <video src="video/Screencast from 03-15-2024 03:31:16 PM.webm" controls width="800" height="450" preload="auto">
+        <!-- only if the video cant load -->
+        Unable to load video
+    </video>
+    <p>I mean they seem to be moving</p>
+    <h4>Run time bug, lol</h4>
+    <video src="video/Screencast from 03-12-2024 12:17:51 AM.webm" controls width="800" height="450" preload="auto">
+        <!-- only if the video cant load -->
+        Unable to load video
+    </video>
+    <p><i>ahhhh,</i> thats better</p>
+
+    <a href="#top">click to go back to the top!</a>
+</body>
+</html>
